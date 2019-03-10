@@ -16,6 +16,7 @@ class categoriesController extends controller {
 
         $products = new Products();
         $categories = new Categories();
+        
         $dados['category_name'] = $categories->getCategoryName($id);
 
         if(!empty($dados['category_name'])) {

@@ -72,24 +72,28 @@
 					        <a class="dropdown-toggle" data-toggle="dropdown" href="#"><?php $this->lang->get('SELECTCATEGORY'); ?>
 					        <span class="caret"></span></a>
 					        <ul class="dropdown-menu">
-					          <?php foreach($viewData['categories'] as $cat): ?>
-											<li>
-												<a href="<?php echo BASE_URL.'categories/enter/'.$cat['id']; ?>">
-													<?php echo $cat['name']; ?>
-												</a>
-											</li>
-											<?php 
-												if(count($cat['subs']) > 0) {
-													$this->loadView('menu_subcategory', array(
-														'subs' => $cat['subs'],
-														'level' => 1
-													));
-												}
-											?>
-										<?php endforeach; ?>
+					        	<?php foreach($viewData['categories'] as $cat): ?>
+					        	<li>
+					        		<a href="<?php echo BASE_URL.'categories/enter/'.$cat['id']; ?>">
+					        			<?php echo $cat['name']; ?>
+					        		</a>
+					        	</li>
+					        	<?php
+					        	if(count($cat['subs']) > 0) {
+					        		$this->loadView('menu_subcategory', array(
+					        			'subs' => $cat['subs'],
+					        			'level' => 1
+					        		));
+					        	}
+					        	?>
+					        	<?php endforeach; ?>
 					        </ul>
 					      </li>
-						<li><a href="#">Categoria X</a></li>
+					    <?php if(isset($viewData['category_filter'])): ?>
+						    <?php foreach($viewData['category_filter'] as $cf): ?>
+						    <li><a href="<?php echo BASE_URL; ?>categories/enter/<?php echo $cf['id']; ?>"><?php echo $cf['name']; ?></a></li>
+							<?php endforeach; ?>
+						<?php endif; ?>
 					</ul>
 				</div>
 			</nav>
