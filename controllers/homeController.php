@@ -12,6 +12,9 @@ class homeController extends controller {
 
         $products = new Products();
         $categories = new Categories();
+        $f = new Filters();
+
+        $filters = array();
 
         $currentPage = 1;
         $offset = 0;
@@ -30,7 +33,9 @@ class homeController extends controller {
 
         $dados['categories'] = $categories->getList();
 
-        $dados['maxslider'] = 999;
+        $dados['filters'] = $f->getFilters($filters);
+
+
 
         $this->loadTemplate('home', $dados);
     }

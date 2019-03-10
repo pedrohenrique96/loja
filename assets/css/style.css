@@ -383,23 +383,16 @@ footer h3 {
 }
 .filtertitle {
 	color:#59b210;
-	font-size:15px;
+	font-size:17px;
 	font-weight: bold;
 	padding-bottom:5px;
 	margin-bottom:5px;
 	border-bottom:1px solid #EEE;
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+.filteritem {
+	height:25px;
+	font-size:12px;
+}
+.filteritem label {
+	font-weight:normal;
+}
