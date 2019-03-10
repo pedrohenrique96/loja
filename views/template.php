@@ -119,9 +119,12 @@
 				  			<div class="filterbox">
 				  				<div class="filtertitle"><?php $this->lang->get('PRICE'); ?></div>
 				  				<div class="filtercontent">
-				  					<input type="text" id="amount" readonly>
+				  												
+										<input type="text" id="amount" readonly>
+									
+ 
 									<div id="slider-range"></div>
-				  				</div>
+
 				  			</div>
 
 				  			<div class="filterbox">
