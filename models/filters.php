@@ -57,6 +57,8 @@ class Filters extends model {
 		// Criando filtro das Promoções
 		$array['sale'] = $products->getSaleCount($filters);
 
+		// Criando filtro das Opções
+		$array['options'] = $products->getAvailableOptions($filters);
 
 		return $array;
 	}

@@ -201,7 +201,16 @@
 				  			<div class="filterbox">
 				  				<div class="filtertitle"><?php $this->lang->get('OPTIONS'); ?></div>
 				  				<div class="filtercontent">
-				  					...
+				  					<?php foreach($viewData['filters']['options'] as $option): ?>
+				  						<strong><?php echo $option['name']; ?></strong><br/>
+				  						<?php foreach($option['options'] as $op): ?>
+				  							<div class="filteritem">
+						  						<input type="checkbox" name="filter[options][]" value="<?php echo $op['id']; ?>" id="filter_options<?php echo $op['id']; ?>" /> 
+						  						<label for="filter_options<?php echo $op['id']; ?>"><?php echo $op['value']; ?></label><span style="float:right">(<?php echo $op['count']; ?>)</span>
+						  					</div>
+				  						<?php endforeach; ?>
+				  						<br/>
+					  				<?php endforeach; ?>
 				  				</div>
 				  			</div>
 
@@ -253,9 +262,9 @@
 	    			<div class="row">
 						<div class="col-xs-12 col-sm-8 col-sm-offset-2 no-padding">
 							<form method="POST">
-                                <input class="subemail" name="email" placeholder="<?php $this->lang->get('SUBSCRIBETEXT'); ?>">
-                                <input type="submit" value="<?php $this->lang->get('SUBSCRIBEBUTTON'); ?>" />
-                            </form>
+								<input class="subemail" name="email" placeholder="<?php $this->lang->get('SUBSCRIBETEXT'); ?>">
+								<input type="submit" value="<?php $this->lang->get('SUBSCRIBEBUTTON'); ?>" />
+							</form>
 						</div>
 					</div>
 	    		</div>
