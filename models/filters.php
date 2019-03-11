@@ -6,7 +6,10 @@ class Filters extends model {
 		$brands = new Brands();
 
 		$array = array(
+			'searchTerm' => '',
 			'brands' => array(),
+			'slider0' => 0,
+			'slider1' => 0,
 			'maxslider' => 1000,
 			'stars' => array(
 				'0' => 0,
@@ -19,6 +22,10 @@ class Filters extends model {
 			'sale' => 0,
 			'options' => array()
 		);
+
+		if(isset($filters['searchTerm'])) {
+			$array['searchTerm'] = $filters['searchTerm'];
+		}
 
 		$array['brands'] = $brands->getList();
 		$brand_products = $products->getListOfBrands($filters);
@@ -41,7 +48,16 @@ class Filters extends model {
 		}
 
 		// Criando filtro de Preço
+		if(isset($filters['slider0'])) {
+			$array['slider0'] = $filters['slider0'];
+		}
+		if(isset($filters['slider1'])) {
+			$array['slider1'] = $filters['slider1'];
+		}
 		$array['maxslider'] = $products->getMaxPrice($filters);
+		if($array['slider1'] == 0) {
+			$array['slider1'] = $array['maxslider'];
+		}
 
 		// Criando filtro das Estrelas
 		$star_products = $products->getListOfStars($filters);

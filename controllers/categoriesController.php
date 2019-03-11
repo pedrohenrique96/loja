@@ -12,11 +12,13 @@ class categoriesController extends controller {
     }
 
     public function enter($id) {
-        $dados = array();
-
+        $store = new Store();
         $products = new Products();
         $categories = new Categories();
-        
+        $f = new Filters();
+
+        $dados = $store->getTemplateData();
+
         $dados['category_name'] = $categories->getCategoryName($id);
 
         if(!empty($dados['category_name'])) {
@@ -41,10 +43,41 @@ class categoriesController extends controller {
 
             $dados['id_category'] = $id;
 
+            $dados['filters'] = $f->getFilters($filters);
+            $dados['filters_selected'] = $filters;
+
+            $dados['searchTerm'] = '';
+            $dados['category'] = '';
+
             $dados['categories'] = $categories->getList();
+
+            $dados['sidebar'] = true;
+
             $this->loadTemplate('categories', $dados);
         } else {
             header("Location: ".BASE_URL);
         }
     }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 }

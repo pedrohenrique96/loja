@@ -16,7 +16,7 @@ if(ENVIRONMENT == 'development') {
 	$config['dbname'] = 'nova_loja';
 	$config['host'] = 'localhost';
 	$config['dbuser'] = 'root';
-	$config['dbpass'] = 'root';
+	$config['dbpass'] = '';
 }
 
 $config['default_lang'] = 'pt-br';
