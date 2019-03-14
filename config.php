@@ -12,11 +12,11 @@ if(ENVIRONMENT == 'development') {
 	$config['dbuser'] = 'root';
 	$config['dbpass'] = '';
 } else {
-	define("BASE_URL", "http://localhost/nova_loja/");
-	$config['dbname'] = 'nova_loja';
-	$config['host'] = 'localhost';
-	$config['dbuser'] = 'root';
-	$config['dbpass'] = '';
+	define("BASE_URL", "http://projects.crddeveloper.com/loja/");
+	$config['dbname'] = 'crddev71_loja';
+	$config['host'] = 'http://projects.crddeveloper.com/loja/';
+	$config['dbuser'] = 'crddev71_admin';
+	$config['dbpass'] = 'ba0896@P';
 }
 
 $config['default_lang'] = 'pt-br';

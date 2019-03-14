@@ -19,6 +19,7 @@
 			<img src="<?php echo BASE_URL; ?>assets/images/star.png" border="0" height="15" />
 			<?php endfor; ?>
 		<?php endif; ?>
+		
 		<hr/>
 		<p><?php echo utf8_encode($product_info['description']); ?></p>
 		<hr/>
@@ -29,6 +30,9 @@
 			<input type="hidden" name="id_product" value="<?php echo $product_info['id']; ?>" />
 			<input type="hidden" name="qt_product" value="1" />
 			<button data-action="decrease">-</button><input type="text" name="qt" value="1" class="addtocart_qt" disabled /><button data-action="increase">+</button>
+			<!-- IMPLEMENT-->
+			<input type="hidden" name="price" class="price" value="<?php echo $product_info['price']; ?>" />
+
 			<input class="addtocart_submit" type="submit" value="<?php $this->lang->get('ADD_TO_CART'); ?>" />
 		</form>
 	</div>
@@ -54,6 +58,7 @@
 		<?php endforeach; ?>
 	</div>
 </div>
+
 
 
 

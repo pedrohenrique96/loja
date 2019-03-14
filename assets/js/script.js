@@ -23,19 +23,25 @@ $(function(){
 		$('.filterarea form').submit();
 	});
 
-	$('.addtocartform button').on('click', function(e){
+	$('.addtocartform button').click(function(e){
 		e.preventDefault();
-
+                var preco = parseInt($('.price').val());
+               
 		let qt = parseInt($('.addtocart_qt').val());
 		let action = $(this).attr('data-action');
 
 		if(action == 'decrease') {
 			if(qt-1 >= 1) {
-				qt = qt - 1;
+                            qt--;
+                        var qtd = qt * preco;
+			 $('.original_price').html(qtd);
 			}
 		}
 		else if(action == 'increase') {
 			qt = qt + 1;
+                        
+                        var qtd = qt * preco;
+			 $('.original_price').html(qtd);
 		}
 
 		$('.addtocart_qt').val(qt);
@@ -43,7 +49,7 @@ $(function(){
 
 	});
 
-	$('.photo_item').on('click', function(){
+	$('.photo_item').click(function(){
 		let url = $(this).find('img').attr('src');
 		$('.mainphoto').find('img').attr('src', url);
 	});

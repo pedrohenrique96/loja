@@ -1,4 +1,6 @@
+
 <div class="product_item">
+	
 	<a href="<?php echo BASE_URL; ?>product/open/<?php echo $id; ?>">
 		<div class="product_tags">
 			<?php if($sale == '1'): ?>
