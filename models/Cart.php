@@ -11,6 +11,7 @@ class Cart extends model {
 			$cart = $_SESSION['cart'];
 		}
 
+		
 		foreach($cart as $id => $qt) {
 
 			$info = $products->getInfo($id);

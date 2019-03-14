@@ -14,6 +14,7 @@ class cartController extends controller {
         $cep = '';
         $shipping = array();
 
+        
         if(!empty($_POST['cep'])) {
             $cep = intval($_POST['cep']);
 
@@ -64,7 +65,7 @@ class cartController extends controller {
             }
         }
 
-        header("Location: ".BASE_URL."cart");
+        header("Location: ".BASE_URL."cart"); //posso fazer as o redirecionamento para aonde quiser 
         exit;
 
     }
