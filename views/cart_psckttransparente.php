@@ -3,48 +3,51 @@
 <div class="row">
 	<div class="col-sm-4">
 		<h3>Dados Pessoais</h3>
-
-		<strong>Nome:</strong><br/>
-			<input type="text" name="name" value="Pedro Henirque "  /><br/><br/>
-
-		<strong>CPF:</strong><br/>
-			<input type="text" name="cpf" value="05352745139"  /><br/><br/>
-
-		<strong>Telefone:</strong><br/>
-			<input type="text" name="telefone" value="6192545754"  /><br/><br/>
-
-		<strong>E-mail:</strong><br/>
-			<input type="email" name="email" value="c40842998720568962162@sandbox.pagseguro.com.br"  /><br/><br/>
-
-		<strong>Senha:</strong><br/>
-			<input type="password" name="password" value="A951454h6788P344"  /><br/><br/>
-
+		<div class="form-group">
+			<label for="name">Nome:</label><br/>
+				<input type="text" class="form-control" name="name" value="Pedro Henrique" id="name"  /><br/>
+		</div>		
+		<div class="form-group">
+			<label for="cpf">CPF:</label><br/>
+				<input type="text" class="form-control" name="cpf" value="05352745139" id="cpf"  /><br/>
+		</div>
+		<div class="form-group">
+			<label for="tel">Telefone:</label><br/>
+				<input type="text" class="form-control" name="telefone" value="6192545754" id="tel"  /><br/>
+		</div>
+		<div class="form-group">
+		<label for="email">E-mail:</label><br/>
+			<input type="email" class="form-control" name="email" id="email" value="c40842998720568962162@sandbox.pagseguro.com.br"  /><br/>
+		</div>
+		<div class="form-group">
+		<label for="pwd">Senha:</label><br/>
+			<input type="password" class="form-control" name="password" value="A951454h6788P344" id="pwd"  /><br/>
+		</div>
 	</div>
 	
 	<div class="col-sm-4">
-
 		<h3>Informações de Endereço</h3>
 
 		<strong>CEP:</strong><br/>
-			<input type="text" name="cep" value="72240803"  /><br/><br/>
+			<input type="text" name="cep" id="cep" maxlength="9"  /><br/><br/>
 
 		<strong>Rua:</strong><br/>
-			<input type="text" name="rua" value="qnp 9 "  /><br/><br/>
+			<input type="text" name="rua" id="rua"  /><br/><br/>
 
 		<strong>Número:</strong><br/>
-			<input type="text" name="numero" value="16"  /><br/><br/>
+			<input type="text" name="numero" id="numero"  /><br/><br/>
 
 		<strong>Complemento:</strong><br/>
 			<input type="text" name="complemento" /><br/><br/>
 
 		<strong>Bairro:</strong><br/>
-			<input type="text" name="bairro" value="ceilandia norte"  /><br/><br/>
+			<input type="text" name="bairro" id="bairro"  /><br/><br/>
 
 		<strong>Cidade:</strong><br/>
-			<input type="text" name="cidade"  value="brasilia" /><br/><br/>
+			<input type="text" name="cidade"  id="cidade" /><br/><br/>
 
 		<strong>Estado:</strong><br/>
-			<input type="text" name="estado" value="df" /><br/><br/>
+			<input type="text" name="estado" id="estado" /><br/><br/>
 
 	</div>	
 	
@@ -61,7 +64,7 @@
 			<input type="text" name="cartao_numero" /><br/><br/>
 
 		<strong>Código de Segurança:</strong><br/>
-			<input type="text" name="cartao_cvv"  /><br/><br/>
+			<input type="text" name="cartao_cvv" maxlength="3"  /><br/><br/>
 
 		<strong>Validade:</strong><br/>
 			<select name="cartao_mes">
