@@ -33,12 +33,13 @@ class Users extends model {
 		return $uid;
 	}
 
-	public function createUser($email, $pass) {
+	public function createUser($name, $email, $pass) {
 
-		$sql = "INSERT INTO users (email, password) VALUES (:email, :pass)";
+		$sql = "INSERT INTO users (name, email, password) VALUES (:name, :email, :pass)";
 		$sql = $this->db->prepare($sql);
+		$sql->bindValue(":name", $name);
 		$sql->bindValue(":email", $email);
-		$sql->bindValue(":pass", $pass);
+		$sql->bindValue(":pass", md5($pass));
 		$sql->execute();
 
 		return $this->db->lastInsertId();

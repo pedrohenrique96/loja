@@ -11,10 +11,10 @@
 			<input type="text" name="cpf" value="05352745139"  /><br/><br/>
 
 		<strong>Telefone:</strong><br/>
-			<input type="text" name="telefone" value="92545754"  /><br/><br/>
+			<input type="text" name="telefone" value="6192545754"  /><br/><br/>
 
 		<strong>E-mail:</strong><br/>
-			<input type="email" name="email" value="c40842998720568962162@sandbox.pagseguro.com.br c"  /><br/><br/>
+			<input type="email" name="email" value="c40842998720568962162@sandbox.pagseguro.com.br"  /><br/><br/>
 
 		<strong>Senha:</strong><br/>
 			<input type="password" name="password" value="A951454h6788P344"  /><br/><br/>

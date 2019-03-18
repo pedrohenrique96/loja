@@ -45,17 +45,4 @@ class Purchases extends model {
 		$sql->execute();
 
 	}
-
-
-
-
-
-
-
-
-
-
-
-
-
 }

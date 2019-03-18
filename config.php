@@ -22,7 +22,7 @@ if(ENVIRONMENT == 'development') {
 $config['default_lang'] = 'pt-br';
 $config['cep_origin'] = '72240803';
 
-$config['pagseguro_seller'] = 'seu@email.com';
+$config['pagseguro_seller'] = 'pedrook16@gmail.com';
 
 // Informações do MercadoPago
 $config['mp_appid'] = '1173267089584114';
