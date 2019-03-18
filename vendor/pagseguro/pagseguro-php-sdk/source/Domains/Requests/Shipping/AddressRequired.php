@@ -22,24 +22,20 @@
  *
  */
 
-namespace PagSeguro\Domains\Requests\DirectPreApproval;
+namespace PagSeguro\Domains\Requests\Shipping;
 
-use PagSeguro\Services\DirectPreApproval\PaymentService;
-
-/**
- * Class Payment
- *
- * @package PagSeguro\Domains\Requests\DirectPreApproval
- */
-class Payment extends PaymentRequest
+trait AddressRequired
 {
-    /**
-     * @param $credentials
-     *
-     * @return mixed
-     */
-    public function register($credentials)
+    private $addressRequired;
+
+    public function getAddressRequired()
     {
-        return PaymentService::create($credentials, $this);
+        return current($this->addressRequired);
+    }
+
+    public function setAddressRequired()
+    {
+        $this->addressRequired = new \PagSeguro\Resources\Factory\Shipping\AddressRequired($this->shipping);
+        return $this->addressRequired;
     }
 }

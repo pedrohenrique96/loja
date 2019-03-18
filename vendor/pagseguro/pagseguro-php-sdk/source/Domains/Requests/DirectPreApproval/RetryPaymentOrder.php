@@ -24,14 +24,14 @@
 
 namespace PagSeguro\Domains\Requests\DirectPreApproval;
 
-use PagSeguro\Services\DirectPreApproval\PaymentService;
+use PagSeguro\Services\DirectPreApproval\RetryPaymentOrderService;
 
 /**
  * Class Payment
  *
  * @package PagSeguro\Domains\Requests\DirectPreApproval
  */
-class Payment extends PaymentRequest
+class RetryPaymentOrder extends RetryPaymentOrderRequest
 {
     /**
      * @param $credentials
@@ -40,6 +40,6 @@ class Payment extends PaymentRequest
      */
     public function register($credentials)
     {
-        return PaymentService::create($credentials, $this);
+        return RetryPaymentOrderService::create($credentials, $this);
     }
 }

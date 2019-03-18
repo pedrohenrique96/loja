@@ -25,50 +25,51 @@
 namespace PagSeguro\Services\DirectPreApproval;
 
 use PagSeguro\Domains\Account\Credentials;
-use PagSeguro\Domains\Requests\DirectPreApproval\Payment;
-use PagSeguro\Parsers\DirectPreApproval\PaymentParser;
+use PagSeguro\Domains\Requests\DirectPreApproval\RetryPaymentOrder;
+use PagSeguro\Parsers\DirectPreApproval\RetryPaymentOrderParser;
 use PagSeguro\Resources\Connection;
 use PagSeguro\Resources\Http;
 use PagSeguro\Resources\Log\Logger;
 use PagSeguro\Resources\Responsibility;
 
 /**
- * Class PaymentService
+ * Class RetryPaymentOrderService
  *
  * @package PagSeguro\Services\DirectPreApproval
  */
-class PaymentService
+class RetryPaymentOrderService
 {
     /**
-     * @param Credentials $credentials
-     * @param Payment     $payment
+     * @param Credentials       $credentials
+     * @param RetryPaymentOrder $retryPaymentOrder
      *
      * @return mixed
      * @throws \Exception
      */
-    public static function create(Credentials $credentials, Payment $payment)
+    public static function create(Credentials $credentials, RetryPaymentOrder $retryPaymentOrder)
     {
         Logger::info("Begin", ['service' => 'DirectPreApproval']);
         try {
             $connection = new Connection\Data($credentials);
             $http = new Http('json');
-            Logger::info(sprintf("POST: %s", self::request($connection)), ['service' => 'DirectPreApproval']);
+            Logger::info(sprintf("POST: %s", self::request($connection,
+                RetryPaymentOrderParser::getData($retryPaymentOrder))), ['service' => 'DirectPreApproval']);
             Logger::info(
                 sprintf(
                     "Params: %s",
-                    json_encode(PaymentParser::getData($payment))
+                    json_encode(RetryPaymentOrderParser::getData($retryPaymentOrder))
                 ),
                 ['service' => 'DirectPreApproval']
             );
             $http->post(
-                self::request($connection),
-                PaymentParser::getData($payment),
+                self::request($connection, RetryPaymentOrderParser::getData($retryPaymentOrder)),
+                RetryPaymentOrderParser::getData($retryPaymentOrder),
                 20,
                 \PagSeguro\Configuration\Configure::getCharset()->getEncoding()
             );
             $response = Responsibility::http(
                 $http,
-                new PaymentParser
+                new RetryPaymentOrderParser
             );
             Logger::info(
                 sprintf("DirectPreApproval URL: %s", json_encode(self::response($response))),
@@ -85,11 +86,14 @@ class PaymentService
     /**
      * @param Connection\Data $connection
      *
+     * @param                 $data
+     *
      * @return string
      */
-    private static function request(Connection\Data $connection)
+    private static function request(Connection\Data $connection, $data)
     {
-        return $connection->buildDirectPreApprovalPaymentRequestUrl()."?".$connection->buildCredentialsQuery();
+        return $connection->buildDirectPreApprovalRetryPaymentOrderUrl(
+            $data['preApprovalCode'], $data['paymentOrderCode']) . "?" . $connection->buildCredentialsQuery();
     }
 
     /**

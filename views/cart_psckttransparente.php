@@ -1,87 +1,89 @@
 <h1>Checkout Transparente - Pagseguro</h1>
 
-<h3>Dados Pessoais</h3>
+<div class="row">
+	<div class="col-sm-4">
+		<h3>Dados Pessoais</h3>
 
-<strong>Nome:</strong><br/>
-<input type="text" name="name" value="Bonieky Lacerda Leal" /><br/><br/>
+		<strong>Nome:</strong><br/>
+			<input type="text" name="name" value="Pedro Henirque "  /><br/><br/>
 
-<strong>CPF:</strong><br/>
-<input type="text" name="cpf" value="05347965401" /><br/><br/>
+		<strong>CPF:</strong><br/>
+			<input type="text" name="cpf" value="05352745139"  /><br/><br/>
 
-<strong>Telefone:</strong><br/>
-<input type="text" name="telefone" value="8399999999" /><br/><br/>
+		<strong>Telefone:</strong><br/>
+			<input type="text" name="telefone" value="92545754"  /><br/><br/>
 
-<strong>E-mail:</strong><br/>
-<input type="email" name="email" value="c74502652460089725395@sandbox.pagseguro.com.br" /><br/><br/>
+		<strong>E-mail:</strong><br/>
+			<input type="email" name="email" value="c40842998720568962162@sandbox.pagseguro.com.br c"  /><br/><br/>
 
-<strong>Senha:</strong><br/>
-<input type="password" name="password" value="974U1WM32m975041" /><br/><br/>
+		<strong>Senha:</strong><br/>
+			<input type="password" name="password" value="A951454h6788P344"  /><br/><br/>
 
-<h3>Informações de Endereço</h3>
+	</div>
+	
+	<div class="col-sm-4">
 
-<strong>CEP:</strong><br/>
-<input type="text" name="cep" value="58410340" /><br/><br/>
+		<h3>Informações de Endereço</h3>
 
-<strong>Rua:</strong><br/>
-<input type="text" name="rua" value="Rua Vigário Calixto" /><br/><br/>
+		<strong>CEP:</strong><br/>
+			<input type="text" name="cep" value="72240803"  /><br/><br/>
 
-<strong>Número:</strong><br/>
-<input type="text" name="numero" value="1400" /><br/><br/>
+		<strong>Rua:</strong><br/>
+			<input type="text" name="rua" value="qnp 9 "  /><br/><br/>
 
-<strong>Complemento:</strong><br/>
-<input type="text" name="complemento" /><br/><br/>
+		<strong>Número:</strong><br/>
+			<input type="text" name="numero" value="16"  /><br/><br/>
 
-<strong>Bairro:</strong><br/>
-<input type="text" name="bairro" value="Catolé" /><br/><br/>
+		<strong>Complemento:</strong><br/>
+			<input type="text" name="complemento" /><br/><br/>
 
-<strong>Cidade:</strong><br/>
-<input type="text" name="cidade" value="Campina Grande" /><br/><br/>
+		<strong>Bairro:</strong><br/>
+			<input type="text" name="bairro" value="ceilandia norte"  /><br/><br/>
 
-<strong>Estado:</strong><br/>
-<input type="text" name="estado" value="PB" /><br/><br/>
+		<strong>Cidade:</strong><br/>
+			<input type="text" name="cidade"  value="brasilia" /><br/><br/>
 
-<h3>Informações de Pagamento</h3>
+		<strong>Estado:</strong><br/>
+			<input type="text" name="estado" value="df" /><br/><br/>
 
-<strong>Titular do cartão:</strong><br/>
-<input type="text" name="cartao_titular" value="Bonieky Lacerda Leal" /><br/><br/>
+	</div>	
+	
+	<div class="col-sm-4">
+		<h3>Informações de Pagamento</h3>
 
-<strong>CPF do Titular do cartão:</strong><br/>
-<input type="text" name="cartao_cpf" value="05347965401" /><br/><br/>
+		<strong>Titular do cartão:</strong><br/>
+			<input type="text" name="cartao_titular"  /><br/><br/>
 
-<strong>Número do cartão:</strong><br/>
-<input type="text" name="cartao_numero" /><br/><br/>
+		<strong>CPF do Titular do cartão:</strong><br/>
+			<input type="text" name="cartao_cpf"  /><br/><br/>
 
-<strong>Código de Segurança:</strong><br/>
-<input type="text" name="cartao_cvv" value="123" /><br/><br/>
+		<strong>Número do cartão:</strong><br/>
+			<input type="text" name="cartao_numero" /><br/><br/>
 
-<strong>Validade:</strong><br/>
-<select name="cartao_mes">
-	<?php for($q=1;$q<=12;$q++): ?>
-	<option><?php echo ($q<10)?'0'.$q:$q; ?></option>
-	<?php endfor; ?>
-</select>
-<select name="cartao_ano">
-	<?php $ano = intval(date('Y')); ?>
-	<?php for($q=$ano;$q<=($ano+20);$q++): ?>
-	<option><?php echo $q; ?></option>
-	<?php endfor; ?>
-</select><br/><br/>
+		<strong>Código de Segurança:</strong><br/>
+			<input type="text" name="cartao_cvv"  /><br/><br/>
 
-<strong>Parcelas:</strong><br/>
-<select name="parc"></select><br/><br/>
+		<strong>Validade:</strong><br/>
+			<select name="cartao_mes">
+				<?php for($q=1;$q<=12;$q++): ?>
+				<option><?php echo ($q<10)?'0'.$q:$q; ?></option>
+				<?php endfor; ?>
+			</select>
+			<select name="cartao_ano">
+				<?php $ano = intval(date('Y')); ?>
+				<?php for($q=$ano;$q<=($ano+20);$q++): ?>
+				<option><?php echo $q; ?></option>
+				<?php endfor; ?>
+			</select><br/><br/>
 
-<input type="hidden" name="total" value="<?php echo $total; ?>" />
+		<strong>Parcelas:</strong><br/>
+			<select name="parc"></select><br/><br/>
 
-<button class="button efetuarCompra">Efetuar Compra</button>
+		<input type="hidden" name="total" value="<?php echo $total; ?>" />
 
-
-
-
-
-
-
-
-
+		<button class="button efetuarCompra">Efetuar Compra</button>
+	</div>
+</div>
 
 <script type="text/javascript" src="https://stc.sandbox.pagseguro.uol.com.br/pagseguro/api/v2/checkout/pagseguro.directpayment.js"></script>
 <script type="text/javascript" src="<?php echo BASE_URL; ?>assets/js/psckttransparente.js"></script>

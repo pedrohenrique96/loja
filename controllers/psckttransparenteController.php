@@ -22,6 +22,7 @@ class psckttransparenteController extends controller {
 
         if(!empty($_SESSION['shipping'])) {
             $shipping = $_SESSION['shipping'];
+            
 
             if(isset($shipping['price'])) {
                 $frete = floatval(str_replace(',', '.', $shipping['price']));

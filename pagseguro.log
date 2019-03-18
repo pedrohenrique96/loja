@@ -1,0 +1,40 @@
+
+18/03/2019 16:33:41 PagSeguro.Session[info]: Begin
+18/03/2019 16:33:41 PagSeguro.Session[info]: POST: https://ws.sandbox.pagseguro.uol.com.br/v2/sessions?email=pedrook16%40gmail.com&token=A3ABB78C867344328A5626FF9D117FCC
+18/03/2019 16:33:42 PagSeguro.Session[info]: Session ID: 63d17492e67a496c85554b46c07315f3
+18/03/2019 18:03:45 PagSeguro.Session[info]: Begin
+18/03/2019 18:03:45 PagSeguro.Session[info]: POST: https://ws.sandbox.pagseguro.uol.com.br/v2/sessions?email=pedrook16%40gmail.com&token=A3ABB78C867344328A5626FF9D117FCC
+18/03/2019 18:03:46 PagSeguro.Session[info]: Session ID: a7d7193453dd4ec0b76b08458c9facca
+18/03/2019 18:03:50 PagSeguro.Session[info]: Begin
+18/03/2019 18:03:50 PagSeguro.Session[info]: POST: https://ws.sandbox.pagseguro.uol.com.br/v2/sessions?email=pedrook16%40gmail.com&token=A3ABB78C867344328A5626FF9D117FCC
+18/03/2019 18:03:50 PagSeguro.Session[info]: Session ID: 6beddae75d304208b4d17986d09834b9
+18/03/2019 18:05:10 PagSeguro.Session[info]: Begin
+18/03/2019 18:05:10 PagSeguro.Session[info]: POST: https://ws.sandbox.pagseguro.uol.com.br/v2/sessions?email=pedrook16%40gmail.com&token=A3ABB78C867344328A5626FF9D117FCC
+18/03/2019 18:05:11 PagSeguro.Session[info]: Session ID: 382123b6128943599137ed6db5204c37
+18/03/2019 18:06:56 PagSeguro.Session[info]: Begin
+18/03/2019 18:06:56 PagSeguro.Session[info]: POST: https://ws.sandbox.pagseguro.uol.com.br/v2/sessions?email=pedrook16%40gmail.com&token=A3ABB78C867344328A5626FF9D117FCC
+18/03/2019 18:06:56 PagSeguro.Session[info]: Session ID: 3ff99582a22a4ef789c712ee12a46a34
+18/03/2019 18:10:00 PagSeguro.Session[info]: Begin
+18/03/2019 18:10:00 PagSeguro.Session[info]: POST: https://ws.sandbox.pagseguro.uol.com.br/v2/sessions?email=pedrook16%40gmail.com&token=A3ABB78C867344328A5626FF9D117FCC
+18/03/2019 18:10:01 PagSeguro.Session[info]: Session ID: fb457558f4684ef8974f8e7a67385a52
+18/03/2019 18:11:36 PagSeguro.Session[info]: Begin
+18/03/2019 18:11:37 PagSeguro.Session[info]: POST: https://ws.sandbox.pagseguro.uol.com.br/v2/sessions?email=pedrook16%40gmail.com&token=A3ABB78C867344328A5626FF9D117FCC
+18/03/2019 18:11:37 PagSeguro.Session[info]: Session ID: a833f2372ed54d698e2f15a2f4216773
+18/03/2019 18:22:08 PagSeguro.Session[info]: Begin
+18/03/2019 18:22:08 PagSeguro.Session[info]: POST: https://ws.sandbox.pagseguro.uol.com.br/v2/sessions?email=pedrook16%40gmail.com&token=A3ABB78C867344328A5626FF9D117FCC
+18/03/2019 18:22:09 PagSeguro.Session[info]: Session ID: e693f36c1aca49778e43e64f3f07d192
+18/03/2019 18:24:28 PagSeguro.Session[info]: Begin
+18/03/2019 18:24:28 PagSeguro.Session[info]: POST: https://ws.sandbox.pagseguro.uol.com.br/v2/sessions?email=pedrook16%40gmail.com&token=A3ABB78C867344328A5626FF9D117FCC
+18/03/2019 18:24:28 PagSeguro.Session[info]: Session ID: 9f290f9904464490a1234511e91521e4
+18/03/2019 18:32:00 PagSeguro.Session[info]: Begin
+18/03/2019 18:32:00 PagSeguro.Session[info]: POST: https://ws.sandbox.pagseguro.uol.com.br/v2/sessions?email=pedrook16%40gmail.com&token=A3ABB78C867344328A5626FF9D117FCC
+18/03/2019 18:32:00 PagSeguro.Session[info]: Session ID: 98bb59b25fbb4b9ca506f2e9f46ac9ca
+18/03/2019 20:06:12 PagSeguro.Session[info]: Begin
+18/03/2019 20:06:12 PagSeguro.Session[info]: POST: https://ws.sandbox.pagseguro.uol.com.br/v2/sessions?email=pedrook16%40gmail.com&token=A3ABB78C867344328A5626FF9D117FCC
+18/03/2019 20:06:13 PagSeguro.Session[info]: Session ID: bacda216638747ec8efc24b5123c14fc
+18/03/2019 20:33:14 PagSeguro.Session[info]: Begin
+18/03/2019 20:33:18 PagSeguro.Session[info]: POST: https://ws.sandbox.pagseguro.uol.com.br/v2/sessions?email=pedrook16%40gmail.com&token=A3ABB78C867344328A5626FF9D117FCC
+18/03/2019 20:33:20 PagSeguro.Session[info]: Session ID: b97b924816ec46309b5133f5e25d4a97
+18/03/2019 20:35:46 PagSeguro.Session[info]: Begin
+18/03/2019 20:35:46 PagSeguro.Session[info]: POST: https://ws.sandbox.pagseguro.uol.com.br/v2/sessions?email=pedrook16%40gmail.com&token=A3ABB78C867344328A5626FF9D117FCC
+18/03/2019 20:35:47 PagSeguro.Session[info]: Session ID: 73c901a3bbf6493385058942ccb8edd1

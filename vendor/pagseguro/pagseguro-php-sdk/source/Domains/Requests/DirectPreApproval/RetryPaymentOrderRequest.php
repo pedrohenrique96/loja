@@ -24,22 +24,39 @@
 
 namespace PagSeguro\Domains\Requests\DirectPreApproval;
 
-use PagSeguro\Services\DirectPreApproval\PaymentService;
+use PagSeguro\Domains\DirectPreApproval\Traits\ParserTrait;
 
 /**
- * Class Payment
+ * Class PaymentRequest
  *
  * @package PagSeguro\Domains\Requests\DirectPreApproval
  */
-class Payment extends PaymentRequest
+class RetryPaymentOrderRequest
 {
+    use ParserTrait;
+    private $preApprovalCode;
+    private $paymentOrderCode;
+
     /**
-     * @param $credentials
-     *
-     * @return mixed
+     * PaymentRequest constructor.
      */
-    public function register($credentials)
+    public function __construct()
     {
-        return PaymentService::create($credentials, $this);
+    }
+
+    /**
+     * @param $preApprovalCode
+     */
+    public function setPreApprovalCode($preApprovalCode)
+    {
+        $this->preApprovalCode = $preApprovalCode;
+    }
+
+    /**
+     * @param mixed $paymentOrderCode
+     */
+    public function setPaymentOrderCode($paymentOrderCode)
+    {
+        $this->paymentOrderCode = $paymentOrderCode;
     }
 }

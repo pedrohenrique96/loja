@@ -32,7 +32,7 @@
 		<td>
 			<?php if(isset($shipping['price'])): ?>
 				<strong>R$ <?php echo $shipping['price']; ?></strong> (<?php echo $shipping['date']; ?> dia<?php echo ($shipping['date']=='1')?'':'s'; ?>)
-			<?php  else: ?>
+			<?php else: ?>
 				Qual seu CEP?<br/>
 				<form method="POST">
 					<input type="number" name="cep" /><br/>

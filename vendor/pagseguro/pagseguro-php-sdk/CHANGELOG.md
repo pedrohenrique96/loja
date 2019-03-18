@@ -1,5 +1,15 @@
+3.4.1
+- Correção na requisição de Pagamento e Retentativa de Pagamento Recorrente
+
+3.4.0
+- Adicionada possibilidade de *não* enviar o endereço de entrega nas requisições (*shipping* opcional).
+
+3.3.2
+- Correção no charset das requisições
+- Correção do erro "Undefined class constant 'INSTALLMENT_NO_INTEREST_INSTALLMENT_QUANTITY'" ao configurar o número de parcelas no checkout transparente com cartão de crédito.
+
 3.3.0
-- Removida funcionalidade split (depreciada)
+- Removidas funcionalidades depreciadas
 - Correções e melhorias gerais
 
 3.2.0

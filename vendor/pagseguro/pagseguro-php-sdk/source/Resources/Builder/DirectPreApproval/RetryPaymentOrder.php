@@ -22,24 +22,22 @@
  *
  */
 
-namespace PagSeguro\Domains\Requests\DirectPreApproval;
+namespace PagSeguro\Resources\Builder\DirectPreApproval;
 
-use PagSeguro\Services\DirectPreApproval\PaymentService;
+use PagSeguro\Resources\Builder;
 
 /**
- * Class Payment
+ * Class RetryPaymentOrder
  *
- * @package PagSeguro\Domains\Requests\DirectPreApproval
+ * @package PagSeguro\Resources\Builder\DirectPreApproval
  */
-class Payment extends PaymentRequest
+class RetryPaymentOrder extends Builder
 {
     /**
-     * @param $credentials
-     *
-     * @return mixed
+     * @return string
      */
-    public function register($credentials)
+    public static function getRetryPaymentOrderUrl()
     {
-        return PaymentService::create($credentials, $this);
+        return parent::getRequest(parent::getUrl('webservice'), 'directPreApproval/retryPaymentOrder');
     }
 }
