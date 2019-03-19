@@ -72,7 +72,7 @@
 		</div>
 		<div class="form-group">
 			<label>Número do cartão:</label><br/>
-				<input type="text" class="form-control" name="cartao_numero" />
+				<input type="text" class="form-control" name="cartao_numero" maxlength="16" />
 		</div>		
 		<div class="form-group">
 			<label>Código de Segurança:</label><br/>
