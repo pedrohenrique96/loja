@@ -125,3 +125,81 @@
 19/03/2019 00:32:13 PagSeguro.Session[info]: Begin
 19/03/2019 00:32:13 PagSeguro.Session[info]: POST: https://ws.sandbox.pagseguro.uol.com.br/v2/sessions?email=pedrook16%40gmail.com&token=A3ABB78C867344328A5626FF9D117FCC
 19/03/2019 00:32:14 PagSeguro.Session[info]: Session ID: dcef111651c448d4af3fbf3a2e151681
+19/03/2019 15:40:52 PagSeguro.Session[info]: Begin
+19/03/2019 15:40:52 PagSeguro.Session[info]: POST: https://ws.sandbox.pagseguro.uol.com.br/v2/sessions?email=pedrook16%40gmail.com&token=A3ABB78C867344328A5626FF9D117FCC
+19/03/2019 15:40:53 PagSeguro.Session[info]: Session ID: 1b8b134f37ba4f1a83a17ec950ddf950
+19/03/2019 15:43:38 PagSeguro.Session[info]: Begin
+19/03/2019 15:43:38 PagSeguro.Session[info]: POST: https://ws.sandbox.pagseguro.uol.com.br/v2/sessions?email=pedrook16%40gmail.com&token=A3ABB78C867344328A5626FF9D117FCC
+19/03/2019 15:43:38 PagSeguro.Session[info]: Session ID: 14ab0134c1514428b99298e888c5582a
+19/03/2019 15:43:54 PagSeguro.Session[info]: Begin
+19/03/2019 15:43:54 PagSeguro.Session[info]: POST: https://ws.sandbox.pagseguro.uol.com.br/v2/sessions?email=pedrook16%40gmail.com&token=A3ABB78C867344328A5626FF9D117FCC
+19/03/2019 15:43:54 PagSeguro.Session[info]: Session ID: eadd4ef6dda1462b9573104c659ddd3f
+19/03/2019 15:45:04 PagSeguro.Session[info]: Begin
+19/03/2019 15:45:04 PagSeguro.Session[info]: POST: https://ws.sandbox.pagseguro.uol.com.br/v2/sessions?email=pedrook16%40gmail.com&token=A3ABB78C867344328A5626FF9D117FCC
+19/03/2019 15:45:04 PagSeguro.Session[info]: Session ID: 9733821838674e78b4f173da0148b76a
+19/03/2019 15:45:16 PagSeguro.Session[info]: Begin
+19/03/2019 15:45:16 PagSeguro.Session[info]: POST: https://ws.sandbox.pagseguro.uol.com.br/v2/sessions?email=pedrook16%40gmail.com&token=A3ABB78C867344328A5626FF9D117FCC
+19/03/2019 15:45:16 PagSeguro.Session[info]: Session ID: 2131d46d3e6e4667b10f0b5920e0601e
+19/03/2019 15:47:31 PagSeguro.Session[info]: Begin
+19/03/2019 15:47:31 PagSeguro.Session[info]: POST: https://ws.sandbox.pagseguro.uol.com.br/v2/sessions?email=pedrook16%40gmail.com&token=A3ABB78C867344328A5626FF9D117FCC
+19/03/2019 15:47:32 PagSeguro.Session[info]: Session ID: 1335fd9c5fe34c0f920983dafa7ce1ea
+19/03/2019 15:51:28 PagSeguro.Session[info]: Begin
+19/03/2019 15:51:28 PagSeguro.Session[info]: POST: https://ws.sandbox.pagseguro.uol.com.br/v2/sessions?email=pedrook16%40gmail.com&token=A3ABB78C867344328A5626FF9D117FCC
+19/03/2019 15:51:29 PagSeguro.Session[info]: Session ID: a911b2a373b445e6a22868632fecfd9e
+19/03/2019 15:55:10 PagSeguro.Session[info]: Begin
+19/03/2019 15:55:10 PagSeguro.Session[info]: POST: https://ws.sandbox.pagseguro.uol.com.br/v2/sessions?email=pedrook16%40gmail.com&token=A3ABB78C867344328A5626FF9D117FCC
+19/03/2019 15:55:10 PagSeguro.Session[info]: Session ID: a28b005da0184ba8aa5ab8ddc3f8b37d
+19/03/2019 15:58:23 PagSeguro.Session[info]: Begin
+19/03/2019 15:58:23 PagSeguro.Session[info]: POST: https://ws.sandbox.pagseguro.uol.com.br/v2/sessions?email=pedrook16%40gmail.com&token=A3ABB78C867344328A5626FF9D117FCC
+19/03/2019 15:58:24 PagSeguro.Session[info]: Session ID: 9fa71244ce4c4af8bb253c7b261d069f
+19/03/2019 15:58:45 PagSeguro.Session[info]: Begin
+19/03/2019 15:58:45 PagSeguro.Session[info]: POST: https://ws.sandbox.pagseguro.uol.com.br/v2/sessions?email=pedrook16%40gmail.com&token=A3ABB78C867344328A5626FF9D117FCC
+19/03/2019 15:58:45 PagSeguro.Session[info]: Session ID: 6b41baecc12c467a8b54dc731adb7eeb
+19/03/2019 16:00:35 PagSeguro.Session[info]: Begin
+19/03/2019 16:00:35 PagSeguro.Session[info]: POST: https://ws.sandbox.pagseguro.uol.com.br/v2/sessions?email=pedrook16%40gmail.com&token=A3ABB78C867344328A5626FF9D117FCC
+19/03/2019 16:00:35 PagSeguro.Session[info]: Session ID: c6b3c5fb1a9a4bd9b68a4b2547e25b35
+19/03/2019 16:01:17 PagSeguro.Session[info]: Begin
+19/03/2019 16:01:17 PagSeguro.Session[info]: POST: https://ws.sandbox.pagseguro.uol.com.br/v2/sessions?email=pedrook16%40gmail.com&token=A3ABB78C867344328A5626FF9D117FCC
+19/03/2019 16:01:18 PagSeguro.Session[info]: Session ID: 99d79bf87f704683a16fb648793dc2ce
+19/03/2019 16:03:50 PagSeguro.Session[info]: Begin
+19/03/2019 16:03:50 PagSeguro.Session[info]: POST: https://ws.sandbox.pagseguro.uol.com.br/v2/sessions?email=pedrook16%40gmail.com&token=A3ABB78C867344328A5626FF9D117FCC
+19/03/2019 16:03:50 PagSeguro.Session[info]: Session ID: 08abc86d585b4a3b86c6aea7407e97eb
+19/03/2019 16:04:16 PagSeguro.Session[info]: Begin
+19/03/2019 16:04:16 PagSeguro.Session[info]: POST: https://ws.sandbox.pagseguro.uol.com.br/v2/sessions?email=pedrook16%40gmail.com&token=A3ABB78C867344328A5626FF9D117FCC
+19/03/2019 16:04:16 PagSeguro.Session[info]: Session ID: 3d933f441a3b44beaf78dfe477fb995d
+19/03/2019 16:09:42 PagSeguro.Session[info]: Begin
+19/03/2019 16:09:43 PagSeguro.Session[info]: POST: https://ws.sandbox.pagseguro.uol.com.br/v2/sessions?email=pedrook16%40gmail.com&token=A3ABB78C867344328A5626FF9D117FCC
+19/03/2019 16:09:43 PagSeguro.Session[info]: Session ID: 3111bc86eb2744499302b3335cbcdd0b
+19/03/2019 16:11:01 PagSeguro.Session[info]: Begin
+19/03/2019 16:11:01 PagSeguro.Session[info]: POST: https://ws.sandbox.pagseguro.uol.com.br/v2/sessions?email=pedrook16%40gmail.com&token=A3ABB78C867344328A5626FF9D117FCC
+19/03/2019 16:11:02 PagSeguro.Session[info]: Session ID: 6bf3a756185e4796b2bdf09ee31739f5
+19/03/2019 16:13:14 PagSeguro.Session[info]: Begin
+19/03/2019 16:13:14 PagSeguro.Session[info]: POST: https://ws.sandbox.pagseguro.uol.com.br/v2/sessions?email=pedrook16%40gmail.com&token=A3ABB78C867344328A5626FF9D117FCC
+19/03/2019 16:13:14 PagSeguro.Session[info]: Session ID: da1f99a13434480a88381af9bc3de98d
+19/03/2019 16:13:22 PagSeguro.Session[info]: Begin
+19/03/2019 16:13:22 PagSeguro.Session[info]: POST: https://ws.sandbox.pagseguro.uol.com.br/v2/sessions?email=pedrook16%40gmail.com&token=A3ABB78C867344328A5626FF9D117FCC
+19/03/2019 16:13:23 PagSeguro.Session[info]: Session ID: 886717e9cdd046528a4c539d895609b6
+19/03/2019 16:14:04 PagSeguro.Session[info]: Begin
+19/03/2019 16:14:05 PagSeguro.Session[info]: POST: https://ws.sandbox.pagseguro.uol.com.br/v2/sessions?email=pedrook16%40gmail.com&token=A3ABB78C867344328A5626FF9D117FCC
+19/03/2019 16:14:05 PagSeguro.Session[info]: Session ID: dfcd39f55a6c4abc86aeecfc4e26d733
+19/03/2019 16:14:13 PagSeguro.Session[info]: Begin
+19/03/2019 16:14:13 PagSeguro.Session[info]: POST: https://ws.sandbox.pagseguro.uol.com.br/v2/sessions?email=pedrook16%40gmail.com&token=A3ABB78C867344328A5626FF9D117FCC
+19/03/2019 16:14:14 PagSeguro.Session[info]: Session ID: 07fdca6d61774d1e8940dc90de5e910f
+19/03/2019 16:15:42 PagSeguro.Session[info]: Begin
+19/03/2019 16:15:42 PagSeguro.Session[info]: POST: https://ws.sandbox.pagseguro.uol.com.br/v2/sessions?email=pedrook16%40gmail.com&token=A3ABB78C867344328A5626FF9D117FCC
+19/03/2019 16:15:43 PagSeguro.Session[info]: Session ID: c997506c344349e7a9f1f2cf82a9a52f
+19/03/2019 16:16:36 PagSeguro.Session[info]: Begin
+19/03/2019 16:16:36 PagSeguro.Session[info]: POST: https://ws.sandbox.pagseguro.uol.com.br/v2/sessions?email=pedrook16%40gmail.com&token=A3ABB78C867344328A5626FF9D117FCC
+19/03/2019 16:16:37 PagSeguro.Session[info]: Session ID: d2c513e8fd114bb0951a16c92829fd31
+19/03/2019 16:17:19 PagSeguro.Session[info]: Begin
+19/03/2019 16:17:19 PagSeguro.Session[info]: POST: https://ws.sandbox.pagseguro.uol.com.br/v2/sessions?email=pedrook16%40gmail.com&token=A3ABB78C867344328A5626FF9D117FCC
+19/03/2019 16:17:20 PagSeguro.Session[info]: Session ID: 453b7c836f014cf0ba9d3fb5288b0493
+19/03/2019 16:17:35 PagSeguro.Session[info]: Begin
+19/03/2019 16:17:35 PagSeguro.Session[info]: POST: https://ws.sandbox.pagseguro.uol.com.br/v2/sessions?email=pedrook16%40gmail.com&token=A3ABB78C867344328A5626FF9D117FCC
+19/03/2019 16:17:35 PagSeguro.Session[info]: Session ID: 4c8fad05279043f79db2316f52895b27
+19/03/2019 16:17:41 PagSeguro.Session[info]: Begin
+19/03/2019 16:17:41 PagSeguro.Session[info]: POST: https://ws.sandbox.pagseguro.uol.com.br/v2/sessions?email=pedrook16%40gmail.com&token=A3ABB78C867344328A5626FF9D117FCC
+19/03/2019 16:17:42 PagSeguro.Session[info]: Session ID: 6069832bee044392b6961dd008844c75
+19/03/2019 16:17:56 PagSeguro.Session[info]: Begin
+19/03/2019 16:17:56 PagSeguro.Session[info]: POST: https://ws.sandbox.pagseguro.uol.com.br/v2/sessions?email=pedrook16%40gmail.com&token=A3ABB78C867344328A5626FF9D117FCC
+19/03/2019 16:17:56 PagSeguro.Session[info]: Session ID: 64794a7116d54c1bb1f81fa07ca483f2
