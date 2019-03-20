@@ -22,7 +22,7 @@ class Users extends model {
 		$sql = "SELECT * FROM users WHERE email = :email AND password = :pass";
 		$sql = $this->db->prepare($sql);
 		$sql->bindValue(":email", $email);
-		$sql->bindValue(":pass", $pass);
+		$sql->bindValue(":pass", md5($pass));
 		$sql->execute();
 
 		if($sql->rowCount() > 0) {
