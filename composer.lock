@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "0a9a6bf3becb4807903ebef4e82b2a14",
+    "content-hash": "0ff2d11debb05dd04ae9714d4ca8186b",
     "packages": [
         {
             "name": "mercadopago/sdk",

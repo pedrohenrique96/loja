@@ -38,7 +38,7 @@ class paypalController extends controller {
 	            	$dados['error'] = 'E-mail e/ou senha não conferem.';
 	            }
 	        } else {
-	            $uid = $users->createUser($email, $pass);
+	            $uid = $users->createUser($name, $email, $pass);
 	        }
 
 	        if(!empty($uid)) {

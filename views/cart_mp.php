@@ -6,46 +6,70 @@
 </div>
 <?php endif; ?>
 
-<h3>Dados Pessoais</h3>
+<h1>Checkout PayPal</h1>
 
-<form method="POST">
-	<strong>Nome:</strong><br/>
-	<input type="text" name="name" value="Bonieky Lacerda Leal" /><br/><br/>
+<?php if(!empty($error)): ?>
+<div class="warn">
+	<?php echo $error; ?>
+</div>
+<?php endif; ?>
 
-	<strong>CPF:</strong><br/>
-	<input type="text" name="cpf" value="05347965401" /><br/><br/>
+<div class="row">
+	<div class="col-sm-6">
+		<h3>DADOS PESSOAIS</h3>
+		<div class="form-group">
+			<label for="name">Nome:</label><br/>
+				<input type="text" class="form-control" name="name" value="Pedro Henrique" id="name"  />
+		</div>		
+		<div class="form-group">
+			<label for="cpf">CPF:</label><br/>
+				<input type="text" class="form-control" name="cpf" value="05352745139" id="cpf"/>
+		</div>
+		<div class="form-group">
+			<label for="tel">Telefone:</label><br/>
+				<input type="text" class="form-control" name="telefone" value="6192545754" id="tel"  />
+		</div>
+		<div class="form-group">
+		<label for="email">E-mail:</label><br>
+			<input type="email" class="form-control" name="email" id="email" value="testador@hotmail.com"  />
+		</div>
+		<div class="form-group">
+		<label for="pwd">Senha:</label><br/>
+			<input type="password" class="form-control" name="password" value="123" id="pwd"  />
+		</div>
+	</div>
+	
+	<div class="col-sm-6">
+		<h3>DADOS DA ENTREGA</h3>
 
-	<strong>Telefone:</strong><br/>
-	<input type="text" name="telefone" value="8399999999" /><br/><br/>
-
-	<strong>E-mail:</strong><br/>
-	<input type="email" name="email" value="testemp@hotmail.com" /><br/><br/>
-
-	<strong>Senha:</strong><br/>
-	<input type="password" name="pass" value="123" /><br/><br/>
-
-	<h3>Informações de Endereço</h3>
-
-	<strong>CEP:</strong><br/>
-	<input type="text" name="cep" value="58410340" /><br/><br/>
-
-	<strong>Rua:</strong><br/>
-	<input type="text" name="rua" value="Rua Vigário Calixto" /><br/><br/>
-
-	<strong>Número:</strong><br/>
-	<input type="text" name="numero" value="1400" /><br/><br/>
-
-	<strong>Complemento:</strong><br/>
-	<input type="text" name="complemento" /><br/><br/>
-
-	<strong>Bairro:</strong><br/>
-	<input type="text" name="bairro" value="Catolé" /><br/><br/>
-
-	<strong>Cidade:</strong><br/>
-	<input type="text" name="cidade" value="Campina Grande" /><br/><br/>
-
-	<strong>Estado:</strong><br/>
-	<input type="text" name="estado" value="PB" /><br/><br/>
-
+		<div class="form-group">
+			<label for="cep">CEP:</label><br/>
+				<input type="text" class="form-control" name="cep" id="cep" maxlength="9"  />
+		</div>
+		<div class="form-group">
+			<label for="rua">Rua:</label><br/>
+				<input type="text" class="form-control" name="rua" id="rua"  />
+		</div>	
+		<div class="form-group">
+		<label for="numero">Número:</label><br/>
+			<input type="text" class="form-control" name="numero" id="numero"  />
+		</div>
+		<div class="form-group">
+			<label>Complemento:</label><br/>
+				<input type="text" class="form-control" name="complemento" />
+		</div>
+		<div class="form-group">
+			<label for="bairro">Bairro:</label><br/>
+				<input type="text" class="form-control" name="bairro" id="bairro"  />
+		</div>
+		<div class="form-group">
+			<label for="cidade">Cidade:</label><br/>
+				<input type="text" class="form-control" name="cidade"  id="cidade" />
+		</div>
+		<div class="form-group">
+			<label for="estado">Estado:</label><br/>
+				<input type="text" class="form-control" name="estado" id="estado" />
+		</div>	
+	</div>
 	<input type="submit" value="Efetuar Compra" class="button efetuarCompra" />
-</form>
+</div>	

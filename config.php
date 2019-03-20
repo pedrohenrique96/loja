@@ -29,8 +29,8 @@ $config['mp_appid'] = '1173267089584114';
 $config['mp_key'] = 'yvnv1p6RfzfSFRH5XPhe5l0zMn6VUKnQ';
 
 // Informações do PayPal
-$config['paypal_clientid'] = 'AQ9fApNwXUdMQiUIGWsuE5-C5w_Xr2Xqetdxi3CrSh5ZAApxx5cywk0oRt6ZxOZZdcPTDsabC3e13gu4';
-$config['paypal_secret'] = 'EMJrTFbSynPxRrycji6IC6Qis32pNIwfcwPCI0OuWLWmOONfHfKOFiNJ3blKVqtMZn3Yt0ut-Z2oPxKl';
+$config['paypal_clientid'] = 'AUo7e6io-_H2AjYEnhs40uJS1V_VocN-QKZH8-A2dCftsWgPKCP-HmqSGaIXfo8IoXlUxCGLJsOoYbnj';
+$config['paypal_secret'] = 'EJ23fZs_pBbVgbz5eCTFbzOqfrUfcXfZR6A0uWTRSqpDFm_yrKamxn7Ad6UpTdQTHxN6xo-gJbMi-wWd';
 
 $db = new PDO("mysql:dbname=".$config['dbname'].";host=".$config['host'], $config['dbuser'], $config['dbpass']);
 $db->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
