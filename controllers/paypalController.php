@@ -1,5 +1,5 @@
 <?php
-class paypalController extends controller {
+class paypalController extends Controller {
 
 	private $user;
 

@@ -1,5 +1,5 @@
 <?php
-class psckttransparenteController extends controller {
+class psckttransparenteController extends Controller {
 
 	private $user;
 

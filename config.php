@@ -12,10 +12,11 @@ if(ENVIRONMENT == 'development') {
 	$config['dbuser'] = 'root';
 	$config['dbpass'] = '';
 } else {
+class Cart extends odel {
 	define("BASE_URL", "http://projects.crddeveloper.com/loja/");
 	$config['dbname'] = 'crddev71_loja';
-	$config['host'] = 'http://projects.crddeveloper.com/loja/';
-	$config['dbuser'] = 'crddev71_admin';
+	$config['host'] = '162.241.2.184';
+	$config['dbuser'] = 'crddev71_pedro';
 	$config['dbpass'] = 'ba0896@P';
 }
 

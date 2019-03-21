@@ -1,5 +1,5 @@
 <?php
-class mpController extends controller {
+class mpController extends Controller {
 
 	private $user;
 

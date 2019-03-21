@@ -1,5 +1,5 @@
 <?php
-class Purchases extends model {
+class Purchases extends Model {
 
 	public function createPurchase($uid, $total, $payment_type) {
 
